@@ -11,6 +11,7 @@ const Navbar = () => {
     try {
       await logOut();
       navigate("/");
+      window.location.reload(false)
     } catch (error) {
       console.log(error);
     }
@@ -20,7 +21,7 @@ const Navbar = () => {
     <div className="flex items-center justify-between p-4 z-[100] w-full absolute">
       <Link to="/">
         <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
-          NETFLIX-ish
+          NETFLIX
         </h1>
       </Link>
       {user?.email ? (
