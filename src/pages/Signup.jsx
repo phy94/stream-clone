@@ -13,13 +13,14 @@ const Signup = () => {
     e.preventDefault();
     setError('')
     try {
-      await signUp(email, password);
+      await signUp(email, password)
         if (password.length<6) {
           setError('Password must be at least 6 characters')
         }
         else {
           navigate('/')
         }
+      // navigate('/')
     } catch (error) {
       console.log(error);
       setError(error.message)
