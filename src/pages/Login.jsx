@@ -49,7 +49,7 @@ const Login = () => {
                 placeholder='Password'
                 autoComplete='current-password'
               />
-              <button className='bg-red-600 py-3 my-6 rounded font-bold'>
+              <button className='bg-yellow-300 py-3 my-6 rounded font-bold text-black'>
                 Sign In
               </button>
               <div className='flex justify-between items-center text-sm text-gray-600'>
@@ -60,7 +60,7 @@ const Login = () => {
                 <p>Need Help?</p>
               </div>
               <p className='py-8'>
-                <span className='text-gray-600'>New to Netflix?</span>{' '}
+                <span className='text-gray-600 mr-1'>New to Movies?</span>{' '}
                 <Link to='/signup'>Sign Up</Link>
               </p>
             </form>
